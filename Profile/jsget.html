@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Javascript function for making http get request </h1>
+
+<script>
+function httpGet(theurl)
+{
+var xmlHttp = new XMLHttpRequest();
+xmlHttp.open("GET",theurl,false);
+xmlHttp.send(null);
+return xmlHttp.responseText;
+}
+document.getElementById("demo").innerHTML = httpGet(http://127.0.0.1:8000/hotel/7);
+</script>
+</body>
+</html>
